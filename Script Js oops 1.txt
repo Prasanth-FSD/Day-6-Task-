@@ -1,0 +1,143 @@
+Print the Person in class method ;
+
+
+class Person {
+  constructor(firstName, lastName, age, country, city) {
+    this.firstName = firstName
+    this.lastName = lastName
+    this.age = age
+    this.country = country
+    this.city = city
+    this.score = 0
+    this.skills = []
+  }
+  getFullName() {
+    const fullName = this.firstName + ' ' + this.lastName
+    return fullName
+  }
+  get getScore() {
+    return this.score
+  }
+  get getSkills() {
+    return this.skills
+  }
+  set setScore(score) {
+    this.score += score
+  }
+  set setSkill(skill) {
+    this.skills.push(skill)
+  }
+  getPersonInfo() {
+    let fullName = this.getFullName()
+    let skills =
+      this.skills.length > 0 &&
+      this.skills.slice(0, this.skills.length - 1).join(', ') +
+        ` and ${this.skills[this.skills.length - 1]}`
+    let formattedSkills = skills ? `He knows ${skills}` : ''
+
+    let info = `${fullName} is ${this.age}. He lives ${this.city}, ${this.country}. ${formattedSkills}`
+    return info
+  }
+}
+
+const person1 = new Person('Asabeneh', 'Yetayeh', 250, 'Finland', 'Helsinki')
+const person2 = new Person('Lidiya', 'Tekle', 28, 'Finland', 'Espoo')
+const person3 = new Person('John', 'Doe', 50, 'Mars', 'Mars city')
+
+person1.setScore = 1
+person1.setSkill = 'HTML'
+person1.setSkill = 'CSS'
+person1.setSkill = 'JavaScript'
+
+person2.setScore = 1
+person2.setSkill = 'Planning'
+person2.setSkill = 'Managing'
+person2.setSkill = 'Organizing'
+
+console.log(person1.getScore)
+console.log(person2.getScore)
+
+console.log(person1.getSkills)
+console.log(person2.getSkills)
+console.log(person3.getSkills)
+
+console.log(person1.getPersonInfo())
+console.log(person2.getPersonInfo())
+console.log(person3.getPersonInfo())
+1
+1
+["HTML", "CSS", "JavaScript"]
+["Planning", "Managing", "Organizing"]
+[]
+Asabeneh Yetayeh is 250. He lives Helsinki, Finland. He knows HTML, CSS and JavaScript
+Lidiya Tekle is 28. He lives Espoo, Finland. He knows Planning, Managing and Organizing
+John Doe is 50. He lives Mars city, Mars.
+
+
+
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------
+
+Print the Ubar price ;
+
+
+let baseFee = .44
+let cities = ["Providence", "Boston", "New York", ]
+let uberRates = [5, 10, 15]
+
+let customerName = "mr.x" //prompt("What is your name?")
+let customerCity = "Providence" //prompt("What is your city?")
+
+console.log("Hello", customerName+ ", welcome to the Uber Rate Program")
+
+function getRate(customerCity) {
+  
+  function uberRate(customerCity, index) {
+    
+    let finalRate = (uberRates[index]) * baseFee
+    return finalRate
+  }
+  
+  console.log(customerCity, "rate is:", uberRate(customerCity, cities.indexOf(customerCity)))
+}
+
+
+
+
+
+output;
+
+
+Hello mr.x, welcome to the Uber Rate Program
+Providence rate is: 2.2
+
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+class to movie  ;
+
+
+
+
+
+
+            Write a class called Movie that models a movie in JavaScript. The properties of your class must be title rating duration (in minutes) year released The minlmum methods you must provide for your class are getTitle getRating getDuration getReleaseYear Acceptable values for the rating property are "G, "PG, "PG-13, "R, "NC-17, and "NR. Heres What i have so far' var function (strTitle, strRating, nDuration, near) var title strTitle; this.getTitle0 var rating = strRating: this.getRating0 var duration = nDuration; this.getDuration0 var year = nYear; this.getYear)
+
+
+
+
+
+
+
+
